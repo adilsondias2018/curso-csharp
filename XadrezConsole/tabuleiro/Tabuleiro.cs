@@ -19,5 +19,12 @@ namespace tabuleiro
             pecas = new Peca[linhas, colunas];
         }
 
+        // Método que permiti o acesso de outros clase a peça que nesse caso esta privada
+
+        public Peca peca (int lina , int coluna)
+        {
+            return pecas[lina, coluna];
+        }
+
     }
 }
