@@ -9,7 +9,7 @@ namespace XadrezConsole
     {
         static void Main(string[] args)
         {
-            /*
+       
             try
             {
                 Tabuleiro tab = new Tabuleiro(8, 8);
@@ -17,6 +17,8 @@ namespace XadrezConsole
                 tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
                 tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(1, 3));
                 tab.colocarPeca(new Rei(tab, Cor.Preta), new Posicao(0, 2));
+                tab.colocarPeca(new Rei(tab, Cor.Branca), new Posicao(2, 2));
+                tab.colocarPeca(new Rei(tab, Cor.Branca), new Posicao(3, 2));
 
                 Tela.imprimirTabuleiro(tab);
 
@@ -28,13 +30,9 @@ namespace XadrezConsole
                 Console.WriteLine(e.Message);
                 Console.ReadLine();
             }
-            */
+           
 
-            PosicaoXadrez pos = new PosicaoXadrez('d', 2);
-            Console.WriteLine(pos);
-            Console.WriteLine(pos.toPosicao());
-            Console.ReadLine();
-
+           
 
         }
     }
